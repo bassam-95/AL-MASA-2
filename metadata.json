@@ -1,0 +1,6 @@
+{
+  "name": "Al Masa Construction",
+  "description": "Al Masa Construction and Contracting website showcasing building projects, experience, and services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
