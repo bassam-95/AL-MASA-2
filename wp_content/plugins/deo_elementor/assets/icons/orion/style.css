@@ -1,0 +1,84 @@
+/*
+    Icon Font orion-font generated from orioniconlibrary.com
+  */
+
+  @font-face {
+  font-family: "orion-font";
+  src: url("fonts/orion-font.eot");
+  src: url("fonts/orion-font.eot?#iefix") format("embedded-opentype"),
+       url("fonts/orion-font.woff2") format("woff2"),
+       url("fonts/orion-font.woff") format("woff"),
+       url("fonts/orion-font.ttf") format("truetype"),
+       url("fonts/orion-font.svg#orion-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "orion-font";
+    src: url("fonts/orion-font.svg#orion-font") format("svg");
+  }
+}
+
+  [data-icon]::before { content: attr(data-icon); }
+
+  [data-icon]::before,
+  .o-24h-support-1::before,
+.o-champion-1::before,
+.o-checkout-cart-1::before,
+.o-currency-1::before,
+.o-delivery-time-1::before,
+.o-diploma-1::before,
+.o-earth-globe-1::before,
+.o-flame-1::before,
+.o-hand-truck-1::before,
+.o-handshake-1::before,
+.o-icon_quotations-1::before,
+.o-lightning-bolt-1::before,
+.o-navigation-map-1::before,
+.o-shipping-truck-1::before,
+.o-snowflake-1::before,
+.o-software-service-1::before,
+.o-text-search-1::before,
+.o-umbrella-1::before,
+.o-wall-clock-1::before,
+.o-wallet-1::before,
+.o-wind-1::before {
+    display: inline-block;
+  font-family: "orion-font";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  }
+
+  .o-24h-support-1::before { content: "\f2b1"; }
+.o-champion-1::before { content: "\f2b2"; }
+.o-checkout-cart-1::before { content: "\f2b3"; }
+.o-currency-1::before { content: "\f2b4"; }
+.o-delivery-time-1::before { content: "\f2b5"; }
+.o-diploma-1::before { content: "\f2ae"; }
+.o-earth-globe-1::before { content: "\f2b6"; }
+.o-flame-1::before { content: "\f2b7"; }
+.o-hand-truck-1::before { content: "\f2b8"; }
+.o-handshake-1::before { content: "\f2b9"; }
+.o-icon_quotations-1::before { content: "\f2c0"; }
+.o-lightning-bolt-1::before { content: "\f28e"; }
+.o-navigation-map-1::before { content: "\f269"; }
+.o-shipping-truck-1::before { content: "\f2ba"; }
+.o-snowflake-1::before { content: "\f2bb"; }
+.o-software-service-1::before { content: "\f2bc"; }
+.o-text-search-1::before { content: "\f2bd"; }
+.o-umbrella-1::before { content: "\f2be"; }
+.o-wall-clock-1::before { content: "\f284"; }
+.o-wallet-1::before { content: "\f29e"; }
+.o-wind-1::before { content: "\f2bf"; }
+
+  
