@@ -2,19 +2,25 @@
   <defs>
     <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#002244" />
-      <stop offset="100%" stop-color="#004e92" />
+      <stop offset="100%" stop-color="#003a6b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d54b00" />
+      <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
   </defs>
-  <g transform="translate(450, 40)">
-    <!-- Diamond Symbol -->
-    <polygon points="120,10 210,70 120,180 30,70" fill="none" stroke="#003a6b" stroke-width="8" stroke-linejoin="round" />
-    <line x1="30" y1="70" x2="210" y2="70" stroke="#003a6b" stroke-width="6" />
-    <line x1="120" y1="10" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
-    <line x1="75" y1="40" x2="120" y2="70" stroke="#003a6b" stroke-width="4" />
-    <line x1="165" y1="40" x2="120" y2="70" stroke="#003a6b" stroke-width="4" />
-    <line x1="75" y1="40" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
-    <line x1="165" y1="40" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
+  <!-- Diamond / Prism Symbol -->
+  <g transform="translate(480, 50)">
+    <polygon points="100,10 180,65 100,165 20,65" fill="none" stroke="url(#blueGrad)" stroke-width="9" stroke-linejoin="round" />
+    <line x1="20" y1="65" x2="180" y2="65" stroke="url(#blueGrad)" stroke-width="7" />
+    <line x1="100" y1="10" x2="100" y2="165" stroke="url(#goldGrad)" stroke-width="5" />
+    <line x1="60" y1="38" x2="100" y2="65" stroke="url(#blueGrad)" stroke-width="4" />
+    <line x1="140" y1="38" x2="100" y2="65" stroke="url(#blueGrad)" stroke-width="4" />
+    <line x1="60" y1="38" x2="100" y2="165" stroke="url(#blueGrad)" stroke-width="4" />
+    <line x1="140" y1="38" x2="100" y2="165" stroke="url(#blueGrad)" stroke-width="4" />
   </g>
-  <text x="30" y="110" font-family="Poppins, Jost, sans-serif" font-size="54" font-weight="700" fill="#1e293b" letter-spacing="4">AL MASA</text>
-  <text x="32" y="145" font-family="Poppins, Jost, sans-serif" font-size="16" font-weight="600" fill="#64748b" letter-spacing="6">CONSTRUCTION &amp; DESIGN</text>
+  <!-- Typography -->
+  <text x="35" y="115" font-family="Poppins, Arial, sans-serif" font-size="52" font-weight="800" fill="#003A6B" letter-spacing="4">AL MASA</text>
+  <text x="37" y="152" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="700" fill="#D54B00" letter-spacing="5">CONSTRUCTION &amp; DESIGN</text>
+  <text x="37" y="180" font-family="Cairo, Arial, sans-serif" font-size="18" font-weight="600" fill="#64748b">شركة الماسة للمقاولات والديكور</text>
 </svg>
