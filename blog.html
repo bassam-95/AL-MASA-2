@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Insights | AL MASA Construction & Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Jost:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/inline_styles.css">
+  <link rel="stylesheet" href="./wp_content/uploads/elementor/css/post_546.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', 'Jost', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      display: flex;
+      min-height: 100vh;
+    }
+    .almasa-layout-wrapper {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+    }
+    .almasa-sidebar {
+      width: 290px;
+      min-width: 290px;
+      background: #ffffff;
+      border-right: 1px solid #e2e8f0;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.03);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      z-index: 100;
+    }
+    .almasa-logo-container {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .almasa-logo-img {
+      max-width: 100%;
+      height: auto;
+      max-height: 90px;
+      display: inline-block;
+    }
+    .almasa-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .almasa-nav-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #003A6B;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+    .almasa-nav-item a:hover {
+      color: #D54B00;
+      background-color: #f1f5f9;
+    }
+    .almasa-nav-item.active a {
+      color: #D54B00;
+      font-weight: 700;
+    }
+    .almasa-dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #003A6B;
+      border-radius: 8px;
+    }
+    .almasa-dropdown-toggle:hover {
+      color: #D54B00;
+      background-color: #f1f5f9;
+    }
+    .almasa-submenu {
+      list-style: none;
+      padding: 4px 0;
+      margin: 0;
+      background: #f8fafc;
+      border-radius: 8px;
+      display: none;
+    }
+    .almasa-submenu.open {
+      display: block;
+    }
+    .almasa-submenu li a {
+      font-size: 14px;
+      font-weight: 500;
+      color: #003A6B;
+      padding: 8px 16px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+    .almasa-submenu li a:hover {
+      color: #D54B00;
+    }
+    .almasa-sidebar-bottom {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .almasa-flags {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .almasa-phone-box {
+      font-size: 15px;
+      color: #003A6B;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .almasa-phone-box a {
+      color: #003A6B;
+      text-decoration: none;
+      display: block;
+    }
+    .almasa-emergency-badge {
+      font-size: 13px;
+      color: #D54B00;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .almasa-main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .almasa-hero {
+      background: linear-gradient(135deg, #091e36 0%, #003A6B 100%);
+      color: #ffffff;
+      padding: 70px 50px;
+      position: relative;
+    }
+    .almasa-hero-breadcrumb {
+      font-size: 15px;
+      font-weight: 500;
+      color: #93c5fd;
+      margin-bottom: 12px;
+    }
+    .almasa-hero-breadcrumb a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    .almasa-hero-title {
+      font-size: 44px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: 1.5px;
+    }
+    .almasa-body-container {
+      padding: 50px;
+      max-width: 1200px;
+    }
+    .almasa-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .almasa-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    .almasa-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px -3px rgba(0,0,0,0.1);
+      border-color: #cbd5e1;
+    }
+    .almasa-btn-primary {
+      display: inline-block;
+      background: #003A6B;
+      color: #ffffff;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .almasa-btn-primary:hover {
+      background: #D54B00;
+    }
+    @media (max-width: 900px) {
+      .almasa-layout-wrapper {
+        flex-direction: column;
+      }
+      .almasa-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .almasa-body-container {
+        padding: 24px;
+      }
+      .almasa-hero {
+        padding: 40px 24px;
+      }
+      .almasa-hero-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="almasa-layout-wrapper">
+    <!-- Left Sidebar Matching Original Website -->
+    <aside class="almasa-sidebar" id="almasaSidebar">
+      <div>
+        <div class="almasa-logo-container">
+          <a href="./index.html">
+            <img src="./wp_content/uploads/2020/03/almasa_logo.svg" alt="AL MASA Construction & Design" class="almasa-logo-img">
+          </a>
+        </div>
+        <nav>
+          <ul class="almasa-nav-list">
+            <li class="almasa-nav-item "><a href="./index.html">Home</a></li>
+            <li class="almasa-nav-item "><a href="./about.html">About</a></li>
+            <li class="almasa-nav-item ">
+              <div class="almasa-dropdown-toggle" onclick="toggleDropdown()">
+                <span>Our Experience</span>
+                <span id="dropArrow">▼</span>
+              </div>
+              <ul class="almasa-submenu " id="experienceSubmenu">
+                <li><a href="./concrete-structure.html">Concrete structure</a></li>
+                <li><a href="./landscape.html">Landscape</a></li>
+                <li><a href="./interior-and-exterior-finishing.html">Interior and Exterior Finishing</a></li>
+                <li><a href="./projects.html">All Projects</a></li>
+              </ul>
+            </li>
+            <li class="almasa-nav-item "><a href="./strategies-approaches.html">Strategies &amp; Approaches</a></li>
+            <li class="almasa-nav-item "><a href="./contact.html">Contact</a></li>
+            <li class="almasa-nav-item "><a href="./careers.html">Careers</a></li>
+            <li class="almasa-nav-item active"><a href="./blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="almasa-sidebar-bottom">
+        <div class="almasa-flags">
+          <a href="?lang=en"><img src="./image/flag_en.svg" alt="English" style="width:24px;height:16px;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></a>
+          <a href="?lang=ar"><img src="./image/flag_ar.svg" alt="العربية" style="width:24px;height:16px;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,0.2);"></a>
+        </div>
+        <div class="almasa-phone-box">
+          <a href="tel:+201273350041">📞 +20 127 335 0041</a>
+          <a href="tel:+201204966069">📞 +20 120 496 6069</a>
+          <div class="almasa-emergency-badge">Emergency? Call Now!</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="almasa-main-content">
+      <!-- Dark Blue Hero Header (Screenshot 2) -->
+      <section class="almasa-hero">
+        <div class="almasa-hero-breadcrumb"><a href="./index.html">Home</a> — Blog</div>
+        <h1 class="almasa-hero-title">NEWS &amp; INSIGHTS</h1>
+      </section>
+
+      <!-- Page Content -->
+      <div class="almasa-body-container">
+        
+  <div style="display:flex;flex-direction:column;gap:36px;">
+    <div style="background:#ffffff;border-radius:12px;padding:36px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);border:1px solid #e2e8f0;">
+      <h2 style="font-size:28px;color:#003A6B;margin-top:0;margin-bottom:16px;">Engineering Insights &amp; Industry News</h2>
+      <p style="font-size:16px;line-height:1.7;color:#475569;">
+        Technical articles and updates from AL MASA’s engineering desk on sustainable civil design, modern facade technology, and project milestones.
+      </p>
+    </div>
+
+    <div class="almasa-card-grid">
+      <div class="almasa-card">
+        <img src="./wp_content/uploads/2020/04/dji_0232_1024x683.jpg" alt="Blog 1" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+        <div style="color:#64748b;font-size:13px;">August 2026 • Concrete Engineering</div>
+        <h3 style="color:#003A6B;margin:6px 0 8px 0;font-size:18px;">Advances in High-Strength Concrete for High-Rise Basements</h3>
+        <p style="color:#64748b;font-size:14px;line-height:1.6;">How self-compacting mixes reduce void ratios and increase structural longevity under extreme ground pressure.</p>
+      </div>
+      <div class="almasa-card">
+        <img src="./wp_content/uploads/2024/12/october_7.png" alt="Blog 2" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+        <div style="color:#64748b;font-size:13px;">July 2026 • Landscape Tech</div>
+        <h3 style="color:#003A6B;margin:6px 0 8px 0;font-size:18px;">Smart Centralized Irrigation in Arid Urban Environments</h3>
+        <p style="color:#64748b;font-size:14px;line-height:1.6;">Reducing potable water usage by 40% using IoT soil moisture sensors and weather forecast automation.</p>
+      </div>
+      <div class="almasa-card">
+        <img src="./wp_content/uploads/2024/12/gareb_3.jpg" alt="Blog 3" style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:16px;">
+        <div style="color:#64748b;font-size:13px;">June 2026 • Architectural Finishing</div>
+        <h3 style="color:#003A6B;margin:6px 0 8px 0;font-size:18px;">Curtain Wall Thermal Envelope Performance in North Africa</h3>
+        <p style="color:#64748b;font-size:14px;line-height:1.6;">Selecting Low-E coatings and thermal break aluminum frames to achieve LEED Gold energy certifications.</p>
+      </div>
+    </div>
+  </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer style="background:#091e36;color:#94a3b8;padding:30px 50px;margin-top:auto;font-size:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+        <div>© 2026 AL MASA Construction &amp; Design. All rights reserved.</div>
+        <div style="display:flex;gap:20px;">
+          <a href="./about.html" style="color:#cbd5e1;text-decoration:none;">About</a>
+          <a href="./projects.html" style="color:#cbd5e1;text-decoration:none;">Projects</a>
+          <a href="./contact.html" style="color:#cbd5e1;text-decoration:none;">Contact</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("experienceSubmenu");
+      const arrow = document.getElementById("dropArrow");
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        arrow.textContent = "▼";
+      } else {
+        menu.classList.add("open");
+        arrow.textContent = "▲";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 683" width="1024" height="683">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1e1b4b" />
+        <stop offset="100%" stop-color="#3730a3" />
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1024" height="683" fill="url(#grad)" />
+    <rect width="1024" height="683" fill="url(#grid)" />
+    <!-- Architectural lines -->
+    <g stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none">
+      <path d="M 100 683 L 300 200 L 500 683" />
+      <path d="M 300 200 L 700 100 L 900 683" />
+      <line x1="300" y1="200" x2="300" y2="683" />
+      <line x1="700" y1="100" x2="700" y2="683" />
+      <circle cx="700" cy="100" r="40" />
+    </g>
+    <!-- Badge & Info -->
+    <rect x="60" y="460" width="904" height="160" rx="16" fill="rgba(10, 25, 45, 0.85)" stroke="rgba(255,255,255,0.15)" />
+    <text x="100" y="525" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Turnkey Interior & MEP Contracting</text>
+    <text x="100" y="575" font-family="Poppins, sans-serif" font-size="20" font-weight="500" fill="#eab308">Premium Italian Marble & Smart Automation</text>
+    <text x="820" y="555" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#94a3b8">AL MASA</text>
+  </svg>

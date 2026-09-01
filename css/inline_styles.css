@@ -615,3 +615,151 @@ color: #003A6B !important;
   src: url(https://almasa-ta.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* ==========================================================
+   AL MASA ENHANCED MASTER STYLES - GITHUB PAGES & PREVIEW
+   ========================================================== */
+
+/* 1. Global visibility & smooth CSS animations */
+.elementor-invisible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.deo-animation, [data-settings*="animation"] {
+  animation: alMasaFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+@keyframes alMasaFadeIn {
+  from {
+    opacity: 0.1;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Left Sidebar & Navigation Menu Styling */
+.deo-elementor-nav-menu__list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.deo-elementor-nav-menu__list > li {
+  width: 100% !important;
+  text-align: center !important;
+  position: relative !important;
+}
+
+.deo-elementor-nav-menu__item,
+.deo-elementor-nav-menu__list a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 10px 14px !important;
+  font-family: "Poppins", "Jost", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #003A6B !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.deo-elementor-nav-menu__item:hover,
+.deo-elementor-nav-menu__list a:hover {
+  color: #D54B00 !important;
+  transform: translateX(2px);
+}
+
+.deo-elementor-nav-menu__list > li.active > a,
+.deo-elementor-nav-menu__list > li.current-menu-item > a {
+  color: #003A6B !important;
+  font-weight: 700 !important;
+}
+
+/* Dropdown Sub-menu */
+.deo-elementor-nav-menu__dropdown-menu,
+.menu-item-has-children .sub-menu {
+  list-style: none !important;
+  padding: 4px 0 10px 0 !important;
+  margin: 0 !important;
+  display: none;
+  background: rgba(0, 58, 107, 0.04) !important;
+  border-radius: 8px !important;
+}
+
+.menu-item-has-children.active-dropdown .sub-menu,
+.menu-item-has-children.active-dropdown .deo-elementor-nav-menu__dropdown-menu {
+  display: block !important;
+}
+
+.menu-item-has-children .sub-menu li a,
+.deo-elementor-nav-menu__dropdown-menu .deo-elementor-nav-menu__item {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #003A6B !important;
+  padding: 6px 12px !important;
+  display: block !important;
+}
+
+.menu-item-has-children .sub-menu li a:hover {
+  color: #D54B00 !important;
+}
+
+/* 3. Dark Grey Stats Bar with Dotted Pattern (Screenshot 1) */
+.almasa-stats-section {
+  background-color: #4a4d52 !important;
+  color: #ffffff !important;
+  padding: 40px 20px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.almasa-stats-grid {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+}
+
+.almasa-stat-item {
+  text-align: center !important;
+  flex: 1 !important;
+  min-width: 150px !important;
+}
+
+.almasa-stat-number {
+  font-size: 52px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+  font-family: "Poppins", sans-serif !important;
+  color: #ffffff !important;
+}
+
+.almasa-stat-label {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #e2e8f0 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.almasa-dotted-pattern {
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 140px !important;
+  height: 100px !important;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2px) !important;
+  background-size: 12px 12px !important;
+  pointer-events: none !important;
+}

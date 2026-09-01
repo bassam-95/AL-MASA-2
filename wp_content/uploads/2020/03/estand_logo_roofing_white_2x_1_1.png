@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717 336" width="717" height="336">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002244" />
+      <stop offset="100%" stop-color="#004e92" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(450, 40)">
+    <!-- Diamond Symbol -->
+    <polygon points="120,10 210,70 120,180 30,70" fill="none" stroke="#003a6b" stroke-width="8" stroke-linejoin="round" />
+    <line x1="30" y1="70" x2="210" y2="70" stroke="#003a6b" stroke-width="6" />
+    <line x1="120" y1="10" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
+    <line x1="75" y1="40" x2="120" y2="70" stroke="#003a6b" stroke-width="4" />
+    <line x1="165" y1="40" x2="120" y2="70" stroke="#003a6b" stroke-width="4" />
+    <line x1="75" y1="40" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
+    <line x1="165" y1="40" x2="120" y2="180" stroke="#003a6b" stroke-width="4" />
+  </g>
+  <text x="30" y="110" font-family="Poppins, Jost, sans-serif" font-size="54" font-weight="700" fill="#1e293b" letter-spacing="4">AL MASA</text>
+  <text x="32" y="145" font-family="Poppins, Jost, sans-serif" font-size="16" font-weight="600" fill="#64748b" letter-spacing="6">CONSTRUCTION &amp; DESIGN</text>
+</svg>
